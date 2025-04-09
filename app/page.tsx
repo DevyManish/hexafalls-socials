@@ -1,11 +1,15 @@
 "use client";
 
-import type React from "react";
+import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
-import Spline from "@splinetool/react-spline/next";
-import { Instagram, Linkedin, Twitter } from "lucide-react";
+import { Instagram, Linkedin, Twitter, MousePointerClick } from "lucide-react";
 import SocialLink from "@/components/SocialLink";
-import SplineModel from "@/components/SplineModel";
+import Spline from "@splinetool/react-spline";
+
+// Dynamically import Spline without SSR
+// const Spline = dynamic(() => import("@splinetool/react-spline"), {
+//   ssr: false,
+// });
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
@@ -53,6 +57,13 @@ export default function Home() {
             href="https://www.linkedin.com/company/hexafalls/"
             icon={<Linkedin className="w-6 h-6" />}
             label="LinkedIn"
+            delay="0.4s"
+          />
+
+          <SocialLink
+            href="https://www.hexafalls.tech/"
+            icon={<MousePointerClick className="w-6 h-6" />}
+            label="Register Now ⚡"
             delay="0.4s"
           />
         </div>

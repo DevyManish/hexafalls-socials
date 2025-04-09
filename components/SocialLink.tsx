@@ -19,7 +19,7 @@ export default function SocialLink({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="group relative flex items-center gap-4 p-4 rounded-lg bg-black/30 backdrop-blur-sm border border-green-500/20 hover:border-green-400/60 transition-all duration-300 hover:shadow-[0_0_15px_rgba(74,222,128,0.5)] animate-float"
+      className="group relative flex rounded-3xl items-center gap-4 p-4  bg-black/30 backdrop-blur-sm border border-green-500/20 hover:border-green-400/60 transition-all duration-300 hover:shadow-[0_0_15px_rgba(74,222,128,0.5)] animate-float"
       style={{
         animationDelay: delay,
         animationDuration: "3s",
