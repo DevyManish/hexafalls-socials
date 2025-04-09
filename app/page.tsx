@@ -19,8 +19,8 @@ export default function Home() {
   return (
     <main className="relative min-h-screen w-full bg-black overflow-hidden">
       <div className="fixed inset-0 z-0">
-        {/* <Spline scene="https://prod.spline.design/rzxy-WQFTuMYe1q2/scene.splinecode" /> */}
-        <SplineModel />
+        <Spline scene="https://prod.spline.design/rzxy-WQFTuMYe1q2/scene.splinecode" />
+        {/* <SplineModel /> */}
       </div>
 
       <div className="fixed inset-0 z-10 bg-gradient-to-br from-black/70 via-black/50 to-transparent pointer-events-none"></div>
