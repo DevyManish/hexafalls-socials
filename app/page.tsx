@@ -1,15 +1,8 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import { Instagram, Linkedin, Twitter, MousePointerClick } from "lucide-react";
 import SocialLink from "@/components/SocialLink";
-import Spline from "@splinetool/react-spline";
-
-// Dynamically import Spline without SSR
-// const Spline = dynamic(() => import("@splinetool/react-spline"), {
-//   ssr: false,
-// });
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
@@ -21,12 +14,10 @@ export default function Home() {
   if (!mounted) return null;
 
   return (
-    <main className="relative min-h-screen w-full bg-black overflow-hidden">
-      <div className="fixed inset-0 z-0">
-        <Spline scene="https://prod.spline.design/rzxy-WQFTuMYe1q2/scene.splinecode" />
-        {/* <SplineModel /> */}
-      </div>
-
+    <main
+      className="relative min-h-screen w-full bg-black bg-cover bg-center overflow-hidden"
+      style={{ backgroundImage: "url('/shack_backdoor.jpg')" }}
+    >
       <div className="fixed inset-0 z-10 bg-gradient-to-br from-black/70 via-black/50 to-transparent pointer-events-none"></div>
 
       <div className="relative z-20 flex flex-col items-center justify-center min-h-screen px-4 text-center">
