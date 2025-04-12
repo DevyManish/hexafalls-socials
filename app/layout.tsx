@@ -29,7 +29,7 @@ export default function RootLayout({
           property="og:description"
           content="Connect with Hexafalls 2025, JIS University's premier hackathon."
         />
-        <meta property="og:image" content="/preview.png" />
+        <meta property="og:image" content="https://hexafalls-socials.vercel.app/preview.png" />
         <link rel="icon" href="/favicon.ico" />
       </head>
       <Analytics />
