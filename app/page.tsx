@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { Instagram, Linkedin, Twitter, MousePointerClick } from "lucide-react";
 import SocialLink from "@/components/SocialLink";
+import { RiDiscordLine } from "react-icons/ri";
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
@@ -47,6 +48,13 @@ export default function Home() {
               href="https://www.linkedin.com/company/hexafalls/"
               icon={<Linkedin className="w-6 h-6" />}
               label="LinkedIn"
+              delay="0.4s"
+            />
+
+            <SocialLink
+              href="https://discord.gg/aU4764Wc"
+              icon={<RiDiscordLine className="w-6 h-6" />}
+              label="Discord"
               delay="0.4s"
             />
 
