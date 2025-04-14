@@ -52,7 +52,7 @@ export default function Home() {
             />
 
             <SocialLink
-              href="https://discord.gg/aU4764Wc"
+              href="https://discord.gg/cYdBDCXuPu"
               icon={<RiDiscordLine className="w-6 h-6" />}
               label="Discord"
               delay="0.4s"
