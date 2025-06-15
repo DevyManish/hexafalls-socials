@@ -64,6 +64,13 @@ export default function Home() {
               label="Register Now ⚡"
               delay="0.4s"
             />
+
+            <SocialLink
+              href="https://www.youtube.com/@HexafallsHackathon"
+              icon={<MousePointerClick className="w-6 h-6" />}
+              label="Youtube"
+              delay="0.4s"
+            />
           </div>
         </div>
       )}
